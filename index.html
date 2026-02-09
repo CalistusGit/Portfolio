@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatib1e" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.Ø">
+    <title>Calistus Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/test.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#servives">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <img src="images/close.png" class="button buttonclose" onclick="closemenu()">
+            </ul>
+            <img src="images/nav.png" class="button buttonopen" onclick="openmenu()">
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Calistus</span><br>Michael from Netherland</h1>
+        </div>
+    </div>
+</div>
+<!--about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, my name is Calistus. I would like to introduce myself. Let’s start with my hobbies: I like to game, listen to music, and watch random videos. I have always had an interest in numbers, so I studied Junior Accounting. Later, I realized it wasn’t for me. Now I’m studying to become a Software Developer, and I’m having a lot of fun with it.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick=" opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>JavaScrpit</span><br>Designing Web interfaces</li>
+                        <li><span>MySQL</span><br>I can make a basic Database with dependencies</li>
+                        <li><span>Junior Accountant</span><br>I have a degree in junior accountant, I have proir experiance in Exactonline and Shopify</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020 - 2021</span><br>Junior Accountant Internship</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - present</span><br>Software Developer</li>
+                        <li><span>2022</span><br>Finished Junior Accountant</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Servives-->
+
+<div id="servives">
+    <div class="container">
+        <h1 class="sub-title">My Servives</h1>
+        <div class="serives-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>I have prior experience with web design thanks to my projects. Feel free to look through them.</p>
+                <a href="https://github.com/CalistusGit">Learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>I personally love designing websites and making them look nice.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Future Project</h2>
+                <p>I want to create a simple and fun game.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/MR.png">
+                <div class="layer">
+                    <h3>Marvel Rivals</h3>
+                    <p>A website where you can lookup your Marvel Rivals Stats</p>
+                    <a href="https://github.com/CalistusGit/MRS"><img src="images/link.svg"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/MR.png">
+                <div class="layer">
+                    <h3>AllTrophies.com</h3>
+                    <p>A project I worked on with my friends that allows you to look up all your statistics for Steam, PlayStation, and Xbox.</p>
+                    <a href="https://github.com/XanderReus/AllTrophies.com"><img src="images/link.svg"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/MR.png">
+                <div class="layer">
+                    <h3>Future Project</h3>
+                    <p>PlaceHolder :)</p>
+                    <a href="#"><img src="images/link.svg"></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>Calistussophia@gmail.com</p>
+                <p>0615111111</p>
+                <div class="social-icons">
+                    <a href=""><img src=""></a>
+                    <a href=""><img src=""></a>
+                </div>
+                <a href="images/CV%20Calistus.docx" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+<script>
+
+    var sidemnu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemnu.style.right = "0";
+    }
+
+    function  closemenu(){
+        sidemnu.style.right = "-200px"
+    }
+</script>
