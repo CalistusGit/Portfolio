@@ -29,8 +29,19 @@ justify-content: space-between;
 flex-wrap: wrap;
 }
 
+.refimg{
+    position: relative;
+    max-width: 30px;
+    max-height: 30px;
+    top: 25%;
+    left: 25%;
+}
+
 .logo{
     width: 140px;
+    font-size: 35px;
+    font-family: impact, Charcoal, sans-serif;
+    color: #ff004f;
 }
 nav ul li{
     display: inline-block;
@@ -235,7 +246,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #dee2e6;
+    background: rgba(255, 0, 79, 0.5);
     width: 60px;
     height: 60px;
     border-radius: 50%;
